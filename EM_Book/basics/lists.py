@@ -1,3 +1,4 @@
+from copy import *
 # nums = [1, 2, 3]
 # print(nums)
 # print(type(nums))
@@ -72,41 +73,80 @@
 # print(s)
 
 
-k = 2 in [1, 2, 3]
-print(k)
+# k = 2 in [1, 2, 3]
+# print(k)
 
-p = [1, 2, 3, 4, 5, 6, 4, 3, 2, 1].index(2)
-print(p)
+# p = [1, 2, 3, 4, 5, 6, 4, 3, 2, 1].index(2)
+# print(p)
+#
+# p = [1, 2, 3, 4, 5, 6, 4, 3, 2, 1].index(2, 3)
+# print(p)
+#
+# c = [1, 2, 3, 4, 5, 6, 4, 3, 2, 1, 4, 3, 2].count(2)
+# print(c)
+#
+# a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# a.reverse()
+# print(a)
+#
+# b = reversed(a)
+# print(list(b))
+#
+# c = [1, 2, 3, 4, 5, 6, 4, 3, 2, 1, 4, 3, 2]
+# c.sort()
+# print(c)
+#
+# c = [1, 2, 3, 4, 5, 6, 4, 3, 2, 1, 4, 3, 2]
+# c.sort(reverse=True)
+# print(c)
+#
+# c = [1, 2, 3, 4, 5, 6, 4, 3, 2, 1, 4, 3, 2, 8, 3, 0, 45, 3]
+# d = sorted(c)
+# print(d)
+#
+# c = [1, 2, 3, 4, 5, 6, 4, 3, 2, 1, 4, 3, 2, 8, 3, 0, 45, 3]
+# d = sorted(c, reverse=True)
+# print(d)
+#
+# print(min(d))
+# print(max(d))
+# print(sum(d))
 
-p = [1, 2, 3, 4, 5, 6, 4, 3, 2, 1].index(2, 3)
-print(p)
 
-c = [1, 2, 3, 4, 5, 6, 4, 3, 2, 1, 4, 3, 2].count(2)
-print(c)
+# a = [10, 20, 30]
+# b = a
+# print(f'a = {a}')
+# print(f'b = {b}')
+# # b[1] = 0
+# # print(a)
+#
+# b = a[:]
+#
+# print(b)
+#
+# b[1] = 0
+#
+# print(a)
+# print(b)
+#
+# d = a.copy()
+# print(a)
+# print(d)
+#
+# d[0] = 100
+# print(d)
+# print(a)
 
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-a.reverse()
-print(a)
+x = [10, 20, [100, 200], 30, [300, 400]]
 
-b = reversed(a)
-print(list(b))
+y = x[:]
+z = x.copy()
+d = deepcopy(x)
 
-c = [1, 2, 3, 4, 5, 6, 4, 3, 2, 1, 4, 3, 2]
-c.sort()
-print(c)
+x[2][1] = 0
+x[4] = 0
 
-c = [1, 2, 3, 4, 5, 6, 4, 3, 2, 1, 4, 3, 2]
-c.sort(reverse=True)
-print(c)
-
-c = [1, 2, 3, 4, 5, 6, 4, 3, 2, 1, 4, 3, 2, 8, 3, 0, 45, 3]
-d = sorted(c)
+print(x)
+print(y)
+print(z)
 print(d)
-
-c = [1, 2, 3, 4, 5, 6, 4, 3, 2, 1, 4, 3, 2, 8, 3, 0, 45, 3]
-d = sorted(c, reverse=True)
-print(d)
-
-print(min(d))
-print(max(d))
-print(sum(d))
