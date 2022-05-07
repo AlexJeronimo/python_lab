@@ -80,4 +80,72 @@
 # print(is_string_in_text('hey', 'hey dude'))
 
 
+# def te_percent_of_product(x, y):
+#     return (x * y) * 0.1
+#
+#
+# print(te_percent_of_product(10, 20))
 
+
+# def ten_percent_of_product_with_args(*args):
+#     product = 1
+#     for number in args:
+#         product *= number
+#     return product * 0.1
+#
+#
+# print(ten_percent_of_product_with_args(10, 20, 7, 2))
+
+
+# def percent_of_product_with_args(percent, *args):
+#     product = 1
+#     for number in args:
+#         product *= number
+#     return product / 100 * percent
+#
+#
+# print(percent_of_product_with_args(3, 20, 7, 2, 45, 325))
+
+# def func_with_kwargs(**kwargs):
+#     print(kwargs)
+#
+#
+# func_with_kwargs(first=1, second=2, third=3)
+#
+#
+# def func_with_args(*args):
+#     print(args)
+#
+#
+# func_with_args(1, 2, 3)
+
+# def hello_with_kwargs(**kwargs):
+#     if 'name' in kwargs:
+#         print(f"Hello! Nice to meet you, {kwargs['name']}")
+#     else:
+#         print("Hello! What is your name?")
+#
+#
+# hello_with_kwargs(gender='male', age=34, name='Alex')
+# hello_with_kwargs(gender='male', age=34)
+
+
+# def hello_with_greeting_and_kwargs(greeting, **kwargs):
+#     if 'name' in kwargs:
+#         print(f"{greeting}! Nice to meet you, {kwargs['name']}")
+#     else:
+#         print(f"{greeting}! What is your name?")
+#
+#
+# hello_with_greeting_and_kwargs('Hi', gender='male', age=34, name='Alex')
+# hello_with_greeting_and_kwargs('Hello', gender='male', age=34)
+
+
+
+def func_with_args_and_kwargs(*args, **kwargs):
+    # print(args)
+    # print(kwargs)
+    print(f"I would like {args[1]} {kwargs['food']}")
+
+
+func_with_args_and_kwargs(45, 'one', drink='coffee', food='sandwich')

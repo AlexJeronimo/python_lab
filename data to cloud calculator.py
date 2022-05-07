@@ -1,9 +1,9 @@
 import xlsxwriter
 
-book = xlsxwriter.Workbook('Example2.xlsx')
+book = xlsxwriter.Workbook('price by company.xlsx')
 
 a = {'ADVPIPE': 728, 'AIRFRGH': 65, 'BELVOIR': 926, 'CAMSRVC': 236, 'CHELCON': 2620, 'FIRSTCL': 16, 'GFURNIT': 5140,
-     'HVJCOMP': 10900, 'HVJSCTX': 2660, 'KEEPHOU': 3430, 'LEGACYT': 1950, 'MCSURG': 2080,
+     'HVJCOMP': 10900, 'HVJSCTX': 2660,'JVFCOMP': 16200, 'KEEPHOU': 3430, 'LEGACYT': 1950, 'MCSURG': 2080,
      'MORTCOO': 78,
      'MRAMBIN': 5640, 'PLASTEC': 647, 'RAMALLO': 1310, 'REACHUN': 5550, 'SMFADPC': 7750, 'STERLIN': 6910,
      'WFLASH': 3030,
