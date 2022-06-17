@@ -1,3 +1,4 @@
 ImmutableMultiDict([('phrase', 'letters'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36|{'e'}
 ImmutableMultiDict([('phrase', 'some other text for example'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36|{'o', 'a', 'e'}
 ImmutableMultiDict([('phrase', 'another text'), ('letters', 'aeiou')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36|{'a', 'e', 'o'}
+ImmutableMultiDict([('phrase', 'try to get user agent'), ('letters', 'aeiou')])|127.0.0.1|None|{'a', 'o', 'u', 'e'}
