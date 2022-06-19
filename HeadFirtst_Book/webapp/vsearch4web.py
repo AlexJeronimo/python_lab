@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request, redirect, escape
+from flask import Flask, render_template, request, redirect, escape, session
 from vsearch import search_for_letters
 # import mysql.connector
 from DBcm import UseDatabase
+from checker import check_logged_in
 
 app = Flask(__name__)
 
@@ -58,6 +59,7 @@ def entry_page() -> 'html':
 
 
 @app.route('/viewlog')
+@check_logged_in
 def view_the_log() -> 'html':
     """Display the contents of the log file as an HTML table"""
     # contents = []
@@ -78,6 +80,20 @@ def view_the_log() -> 'html':
                            the_row_titles=titles,
                            the_data=contents, )
 
+
+@app.route('/login')
+def do_login() -> str:
+    session['logged_in'] = True
+    return 'You are logged in'
+
+
+@app.route('/logout')
+def do_logout() -> str:
+    session.pop('logged_in')
+    return 'You are now logged out'
+
+
+app.secret_key = 'YouWillNewerGuessMySecretKey'
 
 if __name__ == '__main__':
     app.run(debug=True)
